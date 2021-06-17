@@ -1,0 +1,54 @@
+.navstyle{
+    background-color: rgb(22, 47, 81);
+}
+
+.titulo{
+    align-items: center;
+    text-align: center;
+
+}
+
+.footer{
+    background: #152F4F;
+    color:white;
+
+    .fotologos{
+        height: 60px;
+    }
+    .textocolab{
+        color: white;
+        text-align: center;
+    }
+    .cardstyle{
+        background-color: rgb(52, 77, 111);
+        
+    }
+    .links{
+      font-family: 'Montserrat', sans-serif;
+      ul {list-style-type: none;}
+      li a{
+        color: white;
+        transition: color .2s;
+        &:hover{
+          text-decoration:none;
+          color:#4180CB;
+          }
+      }
+      .logos{
+          height: 50px;
+          margin: 10px;
+      }
+    }  
+    .about-company{
+      i{font-size: 25px;}
+      a{
+        color:white;
+        transition: color .2s;
+        &:hover{color:#4180CB}
+      }
+    } 
+    .location{
+      i{font-size: 18px;}
+    }
+    .copyright p{border-top:1px solid rgba(255,255,255,.1);}    
+}
