@@ -2,6 +2,27 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body .parallax {
+  background-image: url("../images/fondo.jpg");
+  min-height: 1050px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .contenedor {
+  background-color: white;
+  min-height: 800px;
+  border: solid 20px #648ec0;
+  border-radius: 100px;
+}
+
+body .unidades-top {
+  border-bottom: solid 1px #152F4F;
+  border-radius: 3px;
+}
+
 body .navstyle {
   background-color: #162f51;
 }
@@ -11,6 +32,23 @@ body .titulo {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+body .linksclase {
+  margin-left: 80px;
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+body .linksclase:hover {
+  text-decoration: none;
+  color: #4180CB;
+}
+
+body .pillstab {
+  min-height: 500px;
 }
 
 body .footer {

@@ -1,6 +1,33 @@
 body{
 
+  .parallax {
+    background-image: url("../images/fondo.jpg");
+  
+    min-height: 1050px;
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   font-family: 'Montserrat', sans-serif;
+
+  .contenedor{
+    background-color: white;
+    min-height: 800px;
+    border: solid 20px #648ec0;
+    border-radius: 100px;
+  }
+
+  .unidades-top{
+    border-bottom: solid 1px #152F4F;
+    border-radius: 3px;
+  }
+
+  .unidades-bot{
+    
+  }
 
   .navstyle{
       background-color: rgb(22, 47, 81);
@@ -9,6 +36,21 @@ body{
       align-items: center;
       text-align: center;
   
+  }
+
+  .linksclase{
+      margin-left: 80px;
+      color: black;
+      text-decoration: none;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+  }
+
+  .pillstab{
+    min-height: 500px;
   }
 
   .footer{
