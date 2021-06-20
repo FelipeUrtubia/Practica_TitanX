@@ -14,3 +14,7 @@ Este archivo va a contar como la bitacora de eventos
 16-6 reunion con felipe para ver avances en el trabajo y cambio de entorno de desarrollo de ract a html
 
 17-6 subido archivos a repositorio creado con anterioridad
+
+18-6 Continuar el desarrollo de la pagina
+
+20-6 termino de el primer mockup para la pagina
