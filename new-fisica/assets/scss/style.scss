@@ -3,12 +3,36 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   
+  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #246591 !important;
+    border: none;
+    font-weight: 500;
+    //#344d6f #446daa #275d93 #246591
+  }
+
   .logonavar{
     offset-position: 15px;
+    max-height: 4vw;
+    min-height: 2vw;
+  }
+
+  .navend{
+    margin-right: 143px;
+    .unidadestitulo{
+      font-size: 1vw;
+    }
+    .dropdown-menu-dark{
+      background-color: #246591;
+    }
+    .btn-dark{
+      color: white;
+      background-color: #246591;
+      border: none;
+    }
   }
 
   .parallax {
-    background-image: url("../images/3663429-02.png");
+    background-image: url("../images/fondo.png");
 
     min-height: 980px;
   
@@ -22,7 +46,7 @@ body{
   .contenedor{
     background-color: white;
     min-height: 800px;
-    border: solid 20px rgb(22, 47, 81);
+    border: solid 20px  #152F4F;
     border-radius: 100px;
   }
 
@@ -30,7 +54,12 @@ body{
     border-bottom: solid 1px #152F4F;
     border-radius: 3px;
   }
-
+  .nav-pills .nav-link.active {
+    background-color: #246591;
+  }
+  .nav-link{
+    color: #246591;
+  }
   .contenedoresunidades{
     height: 450px;
   }
@@ -39,6 +68,7 @@ body{
       background-color: rgb(22, 47, 81);
   }
   .titulo{
+      color: rgb(22, 47, 81);
       align-items: center;
       text-align: center;
   
@@ -81,7 +111,7 @@ body{
 
   .linksclase{
       margin-left: 80px;
-      color: black;
+      color: #152F4F;
       text-decoration: none;
       transition: color .2s;
       &:hover{
@@ -93,6 +123,7 @@ body{
   .pillstab{
     min-height: 500px;
   }
+  
 
   .footer{
       background: #152F4F;
@@ -106,8 +137,8 @@ body{
           text-align: center;
       }
       .cardstyle{
-          background-color: rgb(52, 77, 111);
-          
+          background-color: #246591;
+          //rgb(52, 77, 111)
       }
       .links{
         font-family: 'Montserrat', sans-serif;
@@ -121,22 +152,17 @@ body{
             }
         }
         .logos{
-            height: 50px;
+            height: 30px;
             margin: 10px;
         }
-      }  
-      .about-company{
-        i{font-size: 25px;}
-        a{
-          color:white;
-          transition: color .2s;
-          &:hover{color:#4180CB}
-        }
-      } 
-      .location{
-        i{font-size: 18px;}
+      }   
+      .copyright p{border-top:1px solid rgba(255,255,255,.1);}
+      .siguenos{
+        padding-left: 22px;
       }
-      .copyright p{border-top:1px solid rgba(255,255,255,.1);}    
+      .colab{
+        padding-left: 28px;
+      }    
   }
 }
 

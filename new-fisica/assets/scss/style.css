@@ -3,12 +3,38 @@ body {
   font-weight: 500;
 }
 
+body .btn-primary, body .btn-primary:hover, body .btn-primary:active, body .btn-primary:visited {
+  background-color: #246591 !important;
+  border: none;
+  font-weight: 500;
+}
+
 body .logonavar {
   offset-position: 15px;
+  max-height: 4vw;
+  min-height: 2vw;
+}
+
+body .navend {
+  margin-right: 143px;
+}
+
+body .navend .unidadestitulo {
+  font-size: 1vw;
+}
+
+body .navend .dropdown-menu-dark {
+  background-color: #246591;
+}
+
+body .navend .btn-dark {
+  color: white;
+  background-color: #246591;
+  border: none;
 }
 
 body .parallax {
-  background-image: url("../images/3663429-02.png");
+  background-image: url("../images/fondo.png");
   min-height: 980px;
   background-attachment: fixed;
   background-position: center;
@@ -19,13 +45,21 @@ body .parallax {
 body .contenedor {
   background-color: white;
   min-height: 800px;
-  border: solid 20px #162f51;
+  border: solid 20px  #152F4F;
   border-radius: 100px;
 }
 
 body .unidades-top {
   border-bottom: solid 1px #152F4F;
   border-radius: 3px;
+}
+
+body .nav-pills .nav-link.active {
+  background-color: #246591;
+}
+
+body .nav-link {
+  color: #246591;
 }
 
 body .contenedoresunidades {
@@ -37,6 +71,7 @@ body .navstyle {
 }
 
 body .titulo {
+  color: #162f51;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -81,7 +116,7 @@ body #myUL li a:hover:not(.header) {
 
 body .linksclase {
   margin-left: 80px;
-  color: black;
+  color: #152F4F;
   text-decoration: none;
   -webkit-transition: color .2s;
   transition: color .2s;
@@ -111,7 +146,7 @@ body .footer .textocolab {
 }
 
 body .footer .cardstyle {
-  background-color: #344d6f;
+  background-color: #246591;
 }
 
 body .footer .links {
@@ -134,29 +169,19 @@ body .footer .links li a:hover {
 }
 
 body .footer .links .logos {
-  height: 50px;
+  height: 30px;
   margin: 10px;
-}
-
-body .footer .about-company i {
-  font-size: 25px;
-}
-
-body .footer .about-company a {
-  color: white;
-  -webkit-transition: color .2s;
-  transition: color .2s;
-}
-
-body .footer .about-company a:hover {
-  color: #4180CB;
-}
-
-body .footer .location i {
-  font-size: 18px;
 }
 
 body .footer .copyright p {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body .footer .siguenos {
+  padding-left: 22px;
+}
+
+body .footer .colab {
+  padding-left: 28px;
 }
 /*# sourceMappingURL=style.css.map */
