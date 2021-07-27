@@ -1,0 +1,75 @@
+///paleta de colores Royal Blue Dark #07295F, Blue NCS #1D84B5, Maximum Blue #53A2BE, Outrageous Orange #F67451, Ghost White #F3EFF5
+
+body{
+    background-color: #f3eff5;
+    font-family: 'Raleway', sans-serif;
+    height: 2000px;
+    .nav{
+        font-size: 20px;
+        padding-left: 265px;
+        padding-right: 265px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .nav-link{
+            padding-left: 5px !important;
+            padding-right: 35px !important;
+        }
+        img{
+            height: 3.5vw;
+        }
+    }
+    .parallax{
+        background-image: url("../images/fondomakeit-corto-2.png");
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content{
+        .container{
+            text-align: center;
+            h1{
+                padding-top: 50px;
+                padding-bottom: 50px;
+                font-weight: bolder;
+                font-size: 50px;
+            }
+        }
+        .cards{
+            background-color: #07295F;
+            .container{
+                .row{
+                    align-items: center;
+                    .col{
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                        padding-left: 25px;
+                        padding-right: 25px;
+                        .card{
+                            
+                            .btn-primary{
+                                background-color: #1D84B5;
+                                border-color: #52A7CB;
+                            }
+                            h5{
+                                font-weight: bold;
+                            }
+                        }
+                        .buttons{
+                            height: 100px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .categories{
+        .firstcat{
+
+        }
+        .secondcat{
+            
+        }
+    }
+}

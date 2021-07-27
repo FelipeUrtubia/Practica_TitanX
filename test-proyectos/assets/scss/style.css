@@ -1,0 +1,73 @@
+body {
+  background-color: #f3eff5;
+  font-family: 'Raleway', sans-serif;
+  height: 2000px;
+}
+
+body .nav {
+  font-size: 20px;
+  padding-left: 265px;
+  padding-right: 265px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body .nav .nav-link {
+  padding-left: 5px !important;
+  padding-right: 35px !important;
+}
+
+body .nav img {
+  height: 3.5vw;
+}
+
+body .parallax {
+  background-image: url("../images/fondomakeit-corto-2.png");
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .content .container {
+  text-align: center;
+}
+
+body .content .container h1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+body .content .cards {
+  background-color: #07295F;
+}
+
+body .content .cards .container .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .content .cards .container .row .col {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+body .content .cards .container .row .col .card .btn-primary {
+  background-color: #1D84B5;
+  border-color: #52A7CB;
+}
+
+body .content .cards .container .row .col .card h5 {
+  font-weight: bold;
+}
+
+body .content .cards .container .row .col .buttons {
+  height: 100px;
+}
+/*# sourceMappingURL=style.css.map */
