@@ -78,6 +78,20 @@ body .titulo {
   text-align: center;
 }
 
+body .linkslecciones {
+  background-color: #246591;
+}
+
+body .linkslecciones li {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+body .linkslecciones li a {
+  text-decoration: none;
+  color: white;
+}
+
 body #myInput {
   background-position: 10px 12px;
   background-repeat: no-repeat;

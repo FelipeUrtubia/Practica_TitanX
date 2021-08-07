@@ -1,28 +1,32 @@
 body {
-  background-color: #f3eff5;
+  background-color: #F3EFF5;
   font-family: 'Raleway', sans-serif;
   height: 2000px;
 }
 
-body .nav {
-  font-size: 20px;
-  padding-left: 265px;
-  padding-right: 265px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-body .nav .nav-link {
-  padding-left: 5px !important;
-  padding-right: 35px !important;
-}
-
 body .nav img {
-  height: 3.5vw;
+  height: 70px;
+}
+
+@media (min-width: 992px) {
+  body .nav {
+    font-size: 18px;
+    padding-left: 265px;
+    padding-right: 265px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  body .nav .nav-link {
+    padding-left: 5px !important;
+    padding-right: 22px !important;
+  }
+  body .nav img {
+    height: 3.5vw;
+  }
 }
 
 body .parallax {
-  background-image: url("../images/fondomakeit-corto-2.png");
+  background-image: url("../images/fondomakeit-corto.png");
   min-height: 400px;
   background-attachment: fixed;
   background-position: center;
@@ -30,13 +34,17 @@ body .parallax {
   background-size: cover;
 }
 
+body .content {
+  background-color: #F3EFF5;
+}
+
 body .content .container {
   text-align: center;
 }
 
 body .content .container h1 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   font-weight: bolder;
   font-size: 50px;
 }
@@ -58,16 +66,356 @@ body .content .cards .container .row .col {
   padding-right: 25px;
 }
 
-body .content .cards .container .row .col .card .btn-primary {
-  background-color: #1D84B5;
-  border-color: #52A7CB;
+body .content .cards .container .row .col .card .card-img-top {
+  height: 286px;
+}
+
+body .content .cards .container .row .col .card .card-body {
+  background-color: #F3EFF5;
 }
 
 body .content .cards .container .row .col .card h5 {
   font-weight: bold;
 }
 
+body .content .cards .container .row .col .card p {
+  height: 192px;
+}
+
+body .content .cards .container .row .col .card .btn-primary {
+  background-color: #1D84B5;
+  border-color: #53A2BE;
+}
+
 body .content .cards .container .row .col .buttons {
   height: 100px;
+}
+
+body .categories {
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+body .categories h2 {
+  font-weight: bold;
+}
+
+body .categories .btn-primary {
+  background-color: #1D84B5;
+  border-color: #53A2BE;
+}
+
+body .categories .makeit {
+  height: 100%;
+  background-image: url("../images/bannermakeit.jpg");
+  padding-top: 162px;
+}
+
+body .categories .innovacion {
+  height: 100%;
+  background-image: url("https://picsum.photos/id/534/1902/400?grayscale&blur=8");
+  padding-top: 162px;
+}
+
+body .categories .desarrollo {
+  height: 100%;
+  background-image: url("https://picsum.photos/id/36/1902/400?grayscale&blur=8");
+  padding-top: 162px;
+}
+
+body .categories .separador {
+  height: 8px;
+  background-color: #07295F;
+}
+
+body .makeit .fotoseccion {
+  background-image: url("../images/bannermakeit.jpg");
+}
+
+body .makeit .fotoseccion h1 {
+  padding-top: 105px;
+  padding-bottom: 105px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  body .makeit .fotoseccion h1 {
+    color: #F3EFF5;
+  }
+}
+
+@media (min-width: 992px) {
+  body .makeit .fotoseccion {
+    height: 250px;
+    background-image: url("../images/makeit/3.jpg");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+body .makeit .separador {
+  color: #F3EFF5;
+  background-color: #07295F;
+  font-size: larger;
+  font-style: italic;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 992px) {
+  body .makeit .separador {
+    padding-left: 250px;
+    padding-right: 250px;
+  }
+}
+
+body .makeit .container {
+  border-radius: 15px;
+}
+
+body .makeit .container p {
+  color: #07295F;
+}
+
+body .makeit .container .titulo {
+  font-weight: 600;
+}
+
+body .makeit .container .lineaseparadora {
+  background-color: #F67451;
+  height: 2px;
+  border-radius: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+body .makeit .container .row .btn-primary {
+  background-color: #1D84B5;
+  border-color: #53A2BE;
+  margin-left: 15px;
+}
+
+@media (min-width: 992px) {
+  body .makeit .container .row .btn-primary {
+    margin-left: 50px;
+    margin-top: 5px;
+  }
+}
+
+body .makeit .imagenes {
+  text-align: center;
+}
+
+body .makeit .imagenes img {
+  height: 300px;
+  border: solid 3px #53A2BE;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+  body .makeit .imagenes {
+    text-align: center;
+  }
+  body .makeit .imagenes img {
+    height: 340px;
+    border: solid 5px #53A2BE;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+body .makeit .texto p {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: black !important;
+}
+
+body .makeit .texto h1 {
+  text-align: left;
+  color: #07295F;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+body .makeit .texto h2 {
+  color: #F67451;
+}
+
+body .makeit .texto .numero {
+  color: #F67451 !important;
+  font-size: 30px;
+}
+
+body .makeit .texto .numerosp {
+  color: #F67451 !important;
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  body .makeit .texto p {
+    padding-left: 50px;
+    padding-right: 40px;
+    font-size: larger;
+    color: black !important;
+  }
+  body .makeit .texto h1 {
+    text-align: left;
+    color: #07295F;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  body .makeit .texto h2 {
+    color: #F67451;
+  }
+  body .makeit .texto .numero {
+    color: #F67451 !important;
+    font-size: 50px;
+    text-align: end;
+    padding-right: 20px;
+    border-radius: 3px;
+  }
+  body .makeit .texto .numerosp {
+    color: #F67451 !important;
+    font-size: 50px;
+  }
+  body .makeit .texto .col-10 {
+    padding-left: 30px;
+  }
+}
+
+body .proyectos .fotoseccioninno {
+  background-image: url("https://picsum.photos/id/534/812/400?grayscale&blur=3");
+}
+
+body .proyectos .fotoseccioninno h1 {
+  padding-top: 105px;
+  padding-bottom: 105px;
+  text-align: center;
+  font-weight: bold;
+  color: #F3EFF5;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 992px) {
+  body .proyectos .fotoseccioninno {
+    height: 250px;
+    background-image: url("https://picsum.photos/id/534/950/400?grayscale&blur=1");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+body .proyectos .fotosecciondes {
+  background-image: url("https://picsum.photos/id/36/812/400?grayscale&blur=3");
+}
+
+body .proyectos .fotosecciondes h1 {
+  padding-top: 105px;
+  padding-bottom: 105px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0px;
+  color: #F3EFF5;
+}
+
+@media (min-width: 992px) {
+  body .proyectos .fotosecciondes h1 {
+    color: black;
+  }
+}
+
+@media (min-width: 992px) {
+  body .proyectos .fotosecciondes {
+    height: 250px;
+    background-image: url("https://picsum.photos/id/36/950/400?grayscale&blur=1");
+    min-height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+body .footer {
+  text-align: center;
+  background: #07295F;
+  color: #F3EFF5;
+  padding-top: 60px;
+}
+
+body .footer h2 {
+  font-weight: bold;
+}
+
+body .footer .links h4 {
+  font-weight: bold;
+}
+
+body .footer .links ul {
+  list-style-type: none;
+}
+
+body .footer .links li a {
+  color: #F3EFF5;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+body .footer .links li a:hover {
+  text-decoration: none;
+  color: #1D84B5;
+}
+
+body .footer .links .logosredes {
+  height: 50px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+body .footer .logos img {
+  height: 60px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 992px) {
+  body .footer .logos img {
+    height: 3.5vw;
+  }
+}
+
+body .footer .about-company i {
+  font-size: 25px;
+}
+
+body .footer .about-company a {
+  color: #F3EFF5;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+}
+
+body .footer .about-company a:hover {
+  color: #1D84B5;
+}
+
+body .footer .location i {
+  font-size: 18px;
+}
+
+body .footer .copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 /*# sourceMappingURL=style.css.map */

@@ -63,7 +63,6 @@ body{
   .contenedoresunidades{
     height: 450px;
   }
-
   .navstyle{
       background-color: rgb(22, 47, 81);
   }
@@ -72,6 +71,17 @@ body{
       align-items: center;
       text-align: center;
   
+  }
+  .linkslecciones{
+    background-color: #246591;
+    li{
+      text-align: center;
+      padding-bottom: 10px;
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
   }
 
   #myInput {

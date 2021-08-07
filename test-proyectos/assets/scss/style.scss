@@ -1,25 +1,35 @@
 ///paleta de colores Royal Blue Dark #07295F, Blue NCS #1D84B5, Maximum Blue #53A2BE, Outrageous Orange #F67451, Ghost White #F3EFF5
+$primary-blue: #07295F;
+$secondary-blue: #1D84B5;
+$border-blue: #53A2BE;
+$contrast-orange: #F67451;
+$background-white: #F3EFF5;
 
 body{
-    background-color: #f3eff5;
+    background-color: $background-white;
     font-family: 'Raleway', sans-serif;
     height: 2000px;
     .nav{
-        font-size: 20px;
-        padding-left: 265px;
-        padding-right: 265px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        .nav-link{
-            padding-left: 5px !important;
-            padding-right: 35px !important;
-        }
         img{
-            height: 3.5vw;
+            height: 70px;
+        }
+        @media (min-width: 992px) { 
+            font-size: 18px;
+            padding-left: 265px;
+            padding-right: 265px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .nav-link{
+                padding-left: 5px !important;
+                padding-right: 22px !important;
+            }
+            img{
+                height: 3.5vw;
+            }
         }
     }
     .parallax{
-        background-image: url("../images/fondomakeit-corto-2.png");
+        background-image: url("../images/fondomakeit-corto.png");
         min-height: 400px;
         background-attachment: fixed;
         background-position: center;
@@ -27,17 +37,18 @@ body{
         background-size: cover;
     }
     .content{
+        background-color: $background-white;
         .container{
             text-align: center;
             h1{
-                padding-top: 50px;
-                padding-bottom: 50px;
+                padding-top: 40px;
+                padding-bottom: 20px;
                 font-weight: bolder;
                 font-size: 50px;
             }
         }
         .cards{
-            background-color: #07295F;
+            background-color: $primary-blue;
             .container{
                 .row{
                     align-items: center;
@@ -47,13 +58,21 @@ body{
                         padding-left: 25px;
                         padding-right: 25px;
                         .card{
-                            
-                            .btn-primary{
-                                background-color: #1D84B5;
-                                border-color: #52A7CB;
+                            .card-img-top{
+                                height: 286px;
+                            }
+                            .card-body{
+                                background-color: $background-white;
                             }
                             h5{
                                 font-weight: bold;
+                            }
+                            p{
+                                height: 192px;
+                            }
+                            .btn-primary{
+                                background-color: $secondary-blue;
+                                border-color: $border-blue;
                             }
                         }
                         .buttons{
@@ -65,11 +84,273 @@ body{
         }
     }
     .categories{
-        .firstcat{
+        height: 400px;
+        width: 100%;
+        text-align: center;
+        //color: $background-white;
+        h2{
+            font-weight: bold;
+        }
+        .btn-primary{
+            background-color: $secondary-blue;
+            border-color: $border-blue;
+        }
+        .makeit{
+            height: 100%;
+            background-image: url("../images/bannermakeit.jpg");
+            padding-top: 162px;
+        }
+        .innovacion{
+            height: 100%;
+            background-image: url("https://picsum.photos/id/534/1902/400?grayscale&blur=8");
+            padding-top: 162px;
+        }
+        .desarrollo{
+            height: 100%;
+            background-image: url("https://picsum.photos/id/36/1902/400?grayscale&blur=8");
+            padding-top: 162px;
+        }
+        .separador{
+            height: 8px;
+            background-color: $primary-blue;
+        }
+    }
+    .makeit{
+        .fotoseccion{
+            h1{
+                padding-top: 105px;
+                padding-bottom: 105px;
+                text-align: center;
+                font-weight: bold;
+                @media (min-width: 992px) {
+                    color: $background-white;
+                }
+            }
+            background-image: url("../images/bannermakeit.jpg");
+            @media (min-width: 992px) {
+                height: 250px;
+                background-image: url("../images/makeit/3.jpg");
+                min-height: 250px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .separador{
+            color: $background-white;
+            background-color: $primary-blue;
+            font-size: larger;
+            font-style: italic;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            text-align: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            @media (min-width: 992px) {
+                padding-left: 250px;
+                padding-right: 250px;
+            }
+        }
+        .container{
+            border-radius: 15px;
+            p{
+                color: $primary-blue;
+            }
+            .titulo{
+                font-weight: 600;
+            }
+            .lineaseparadora{
+                background-color: $contrast-orange;
+                height: 2px;
+                border-radius: 30px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            .row{
+                .btn-primary{
+                    background-color: $secondary-blue;
+                    border-color: $border-blue;
+                    @media (min-width: 992px) {
+                        margin-left: 50px;
+                        margin-top: 5px;
+                    }
+                    margin-left: 15px;
+                }
+            }
+        }
+        .imagenes{
+            text-align: center;
+            img{
+                height: 300px;
+                border: solid 3px $border-blue;
+                border-radius: 30px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+            @media (min-width: 992px) {
+                text-align: center;
+                img{
+                    height: 340px;
+                    border: solid 5px $border-blue;
+                    border-radius: 30px;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .texto{
+            p{
+                padding-left: 15px;
+                padding-right: 15px;
+                color: black !important;
+            }
+            h1{
+                text-align: left;
+                color: $primary-blue;
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+            h2{
+                color: $contrast-orange;
+            }
+            .numero{
+                color: $contrast-orange !important;
+                font-size: 30px;
+            }
+            .numerosp{
+                color: $contrast-orange !important;
+                font-size: 30px;
+            }
+            @media (min-width: 992px) { 
+                p{
+                    padding-left: 50px;
+                    padding-right: 40px;
+                    font-size: larger;
+                    color: black !important;
+                }
+                h1{
+                    text-align: left;
+                    color: $primary-blue;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                }
+                h2{
+                    color: $contrast-orange;
+                }
+                .numero{
+                    color: $contrast-orange !important;
+                    font-size: 50px;
+                    text-align: end;
+                    padding-right: 20px;
+                    border-radius: 3px;
+                }
+                .numerosp{
+                    color: $contrast-orange !important;
+                    font-size: 50px;
+                    
+                }
+                .col-10{
+                    padding-left: 30px;
+                }
+            }
+        }
+    }
+    .proyectos{
+        .fotoseccioninno{
+            h1{
+                padding-top: 105px;
+                padding-bottom: 105px;
+                text-align: center;
+                font-weight: bold;
+                color: $background-white;
+                margin-bottom: 0px;
+            }
+            background-image: url("https://picsum.photos/id/534/812/400?grayscale&blur=3");
+            @media (min-width: 992px) {
+                height: 250px;
+                background-image: url("https://picsum.photos/id/534/950/400?grayscale&blur=1");
+                min-height: 250px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .fotosecciondes{
+            h1{
+                padding-top: 105px;
+                padding-bottom: 105px;
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 0px;
+                color: $background-white;
+                @media (min-width: 992px) {
+                    color: black;
+                }
+            }
+            background-image: url("https://picsum.photos/id/36/812/400?grayscale&blur=3");
+            @media (min-width: 992px) {
+                height: 250px;
+                background-image: url("https://picsum.photos/id/36/950/400?grayscale&blur=1");
+                min-height: 250px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    .footer{
+        text-align: center;
+        background: $primary-blue;
+        color:$background-white;
+        padding-top: 60px;
 
+        h2{
+            font-weight: bold;
         }
-        .secondcat{
-            
+        .links{
+            h4{
+                font-weight: bold;
+            }
+            ul {list-style-type: none;}
+            li a{
+            color: $background-white;
+            transition: color .2s;
+            &:hover{
+              text-decoration:none;
+              color:$secondary-blue;
+            }
+          }
+          .logosredes{
+            height: 50px;
+            padding-right: 10px;
+            padding-top: 10px;
+            }
+        }  
+        .logos{
+            img{
+                height: 60px;
+                margin-bottom: 50px;
+            }
+            @media (min-width: 992px) { 
+                img{
+                    height: 3.5vw;
+                }
+            }
         }
+        .about-company{
+          i{font-size: 25px;}
+          a{
+            color:$background-white;
+            transition: color .2s;
+            &:hover{color:$secondary-blue}
+          }
+        } 
+        .location{
+          i{font-size: 18px;}
+        }
+        .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
     }
 }
