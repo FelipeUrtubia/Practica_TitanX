@@ -1,7 +1,6 @@
 body {
   background-color: #F3EFF5;
   font-family: 'Raleway', sans-serif;
-  height: 2000px;
 }
 
 body .nav img {
@@ -66,6 +65,16 @@ body .content .cards .container .row .col {
   padding-right: 25px;
 }
 
+body .content .cards .container .row .col .antsig {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  body .content .cards .container .row .col .antsig {
+    display: inline;
+  }
+}
+
 body .content .cards .container .row .col .card .card-img-top {
   height: 286px;
 }
@@ -95,10 +104,12 @@ body .categories {
   height: 400px;
   width: 100%;
   text-align: center;
+  /* Position text in the middle of the page/image */
 }
 
 body .categories h2 {
   font-weight: bold;
+  color: #07295F;
 }
 
 body .categories .btn-primary {
@@ -107,21 +118,128 @@ body .categories .btn-primary {
 }
 
 body .categories .makeit {
-  height: 100%;
+  /* The image used */
   background-image: url("../images/bannermakeit.jpg");
-  padding-top: 162px;
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  /* Full height */
+  height: 400px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body .categories .innovacion {
-  height: 100%;
-  background-image: url("https://picsum.photos/id/534/1902/400?grayscale&blur=8");
-  padding-top: 162px;
+  /* The image used */
+  background-image: url("https://picsum.photos/id/534/1902/400?blur=2");
+  /* Full height */
+  height: 400px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body .categories .desarrollo {
-  height: 100%;
-  background-image: url("https://picsum.photos/id/36/1902/400?grayscale&blur=8");
-  padding-top: 162px;
+  /* The image used */
+  background-image: url("https://picsum.photos/id/36/1902/400?blur=2");
+  /* Full height */
+  height: 400px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body .categories .makeit-text {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/opacity/see-through */
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  -webkit-transform: translate(-50%, 1970%);
+          transform: translate(-50%, 1970%);
+}
+
+body .categories .makeit-text h2 {
+  color: #F67451;
+}
+
+@media (min-width: 992px) {
+  body .categories .makeit-text {
+    -webkit-transform: translate(-50%, 850%);
+            transform: translate(-50%, 850%);
+  }
+}
+
+body .categories .innova-text {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  -webkit-transform: translate(-50%, 2245%);
+          transform: translate(-50%, 2245%);
+}
+
+body .categories .innova-text h2 {
+  color: #F67451;
+}
+
+@media (min-width: 992px) {
+  body .categories .innova-text {
+    -webkit-transform: translate(-50%, 1170%);
+            transform: translate(-50%, 1170%);
+  }
+}
+
+body .categories .des-text {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  -webkit-transform: translate(-50%, 2515%);
+          transform: translate(-50%, 2515%);
+}
+
+body .categories .des-text h2 {
+  color: #F67451;
+}
+
+@media (min-width: 992px) {
+  body .categories .des-text {
+    -webkit-transform: translate(-50%, 1490%);
+            transform: translate(-50%, 1490%);
+  }
 }
 
 body .categories .separador {
@@ -131,24 +249,36 @@ body .categories .separador {
 
 body .makeit .fotoseccion {
   background-image: url("../images/bannermakeit.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 body .makeit .fotoseccion h1 {
-  padding-top: 105px;
-  padding-bottom: 105px;
-  text-align: center;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/opacity/see-through */
+  color: #F67451;
   font-weight: bold;
+  border: 3px solid #f1f1f1;
+  -webkit-transform: translate(13%, 0%);
+          transform: translate(13%, 0%);
+  z-index: 2;
+  width: 71%;
+  padding: 20px;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
   body .makeit .fotoseccion h1 {
-    color: #F3EFF5;
+    -webkit-transform: translate(20%, 100%);
+            transform: translate(20%, 100%);
   }
 }
 
 @media (min-width: 992px) {
   body .makeit .fotoseccion {
-    height: 250px;
+    height: 400px;
     background-image: url("../images/makeit/3.jpg");
     min-height: 250px;
     background-attachment: fixed;
@@ -210,6 +340,25 @@ body .makeit .container .row .btn-primary {
   }
 }
 
+body .makeit .container .participantes {
+  color: #F3EFF5;
+  background-color: #eb876c;
+  text-align: center;
+}
+
+body .makeit .container .participantes p {
+  color: black;
+  margin-bottom: 0px;
+}
+
+body .makeit .container .participantes h4 {
+  font-weight: 700;
+}
+
+body .makeit .container .participantes .nombre {
+  font-weight: 500;
+}
+
 body .makeit .imagenes {
   text-align: center;
 }
@@ -262,6 +411,10 @@ body .makeit .texto .numerosp {
   font-size: 30px;
 }
 
+body .makeit .texto .textoarriba {
+  padding-top: 45px;
+}
+
 @media (min-width: 992px) {
   body .makeit .texto p {
     padding-left: 50px;
@@ -295,59 +448,220 @@ body .makeit .texto .numerosp {
 }
 
 body .proyectos .fotoseccioninno {
-  background-image: url("https://picsum.photos/id/534/812/400?grayscale&blur=3");
+  /* Position text in the middle of the page/image */
 }
 
-body .proyectos .fotoseccioninno h1 {
-  padding-top: 105px;
-  padding-bottom: 105px;
-  text-align: center;
-  font-weight: bold;
-  color: #F3EFF5;
-  margin-bottom: 0px;
+body .proyectos .fotoseccioninno .bg-image {
+  /* The image used */
+  background-image: url("https://picsum.photos/id/534/950/400?blur=1");
+  /* Add the blur effect */
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  /* Full height */
+  height: 200px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: 992px) {
-  body .proyectos .fotoseccioninno {
-    height: 250px;
-    background-image: url("https://picsum.photos/id/534/950/400?grayscale&blur=1");
-    min-height: 250px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  body .proyectos .fotoseccioninno .bg-image {
+    height: 400px;
+  }
+}
+
+body .proyectos .fotoseccioninno .bg-text {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/opacity/see-through */
+  color: #F67451;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  body .proyectos .fotoseccioninno .bg-text {
+    width: 72%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+}
+
+body .proyectos .portadaproyectos {
+  height: 340px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  body .proyectos .portadaproyectos {
+    width: 370px;
   }
 }
 
 body .proyectos .fotosecciondes {
-  background-image: url("https://picsum.photos/id/36/812/400?grayscale&blur=3");
+  /* Position text in the middle of the page/image */
 }
 
-body .proyectos .fotosecciondes h1 {
-  padding-top: 105px;
-  padding-bottom: 105px;
-  text-align: center;
+body .proyectos .fotosecciondes .bg-image {
+  /* The image used */
+  background-image: url("https://picsum.photos/id/36/950/400?blur=1");
+  /* Add the blur effect */
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  /* Full height */
+  height: 200px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  body .proyectos .fotosecciondes .bg-image {
+    height: 400px;
+  }
+}
+
+body .proyectos .fotosecciondes .bg-text {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/opacity/see-through */
+  color: #F67451;
   font-weight: bold;
-  margin-bottom: 0px;
-  color: #F3EFF5;
+  border: 3px solid #f1f1f1;
+  padding: 20px;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
-  body .proyectos .fotosecciondes h1 {
-    color: black;
+  body .proyectos .fotosecciondes .bg-text {
+    width: 72%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
   }
 }
 
+body .proyectos img {
+  width: 370px;
+}
+
+body .moldeproyectos {
+  text-align: center;
+}
+
+body .moldeproyectos .nombreproyecto {
+  color: #07295F;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 992px) {
-  body .proyectos .fotosecciondes {
+  body .moldeproyectos .nombreproyecto {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+body .moldeproyectos img {
+  height: 300px;
+  border: solid 3px #53A2BE;
+  border-radius: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+  body .moldeproyectos {
+    text-align: center;
+  }
+  body .moldeproyectos img {
+    height: 350px;
+    width: 385px;
+    border: solid 5px #53A2BE;
+    border-radius: 30px;
+  }
+}
+
+body .moldeproyectos .row h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+body .moldeproyectos .row h4 {
+  color: #F67451;
+}
+
+body .moldeproyectos .row h5 {
+  text-align: start;
+  font-size: 18px;
+}
+
+body .moldeproyectos .row ol {
+  text-align: start;
+}
+
+body .moldeproyectos .row ol li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body .moldeproyectos .row p {
+  text-align: start;
+}
+
+body .moldeproyectos .row p .fase {
+  font-weight: bold;
+}
+
+body .moldeproyectos .row .under {
+  text-align: center;
+  border-radius: 10px;
+}
+
+body .moldeproyectos .row .final {
+  width: 320px;
+}
+
+@media (min-width: 992px) {
+  body .moldeproyectos .row .final {
     height: 250px;
-    background-image: url("https://picsum.photos/id/36/950/400?grayscale&blur=1");
-    min-height: 250px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 250px;
   }
+}
+
+body .moldeproyectos .participantes {
+  color: #F3EFF5;
+  background-color: #eb876c;
+  text-align: center;
+  border-radius: 15px;
+}
+
+body .moldeproyectos .participantes p {
+  color: black;
+  margin-bottom: 0px;
+}
+
+body .moldeproyectos .participantes h4 {
+  font-weight: 700;
+}
+
+body .moldeproyectos .participantes .nombre {
+  font-weight: 500;
 }
 
 body .footer {

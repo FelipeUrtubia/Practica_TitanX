@@ -9,11 +9,19 @@ body{
     font-weight: 500;
     //#344d6f #446daa #275d93 #246591
   }
-
+  .navbar-brand{
+    @media (min-width: 992px) {
+      position: relative;
+      left: 145px;
+    }
+  }
   .logonavar{
-    offset-position: 15px;
-    max-height: 4vw;
-    min-height: 2vw;
+    height: 50px;
+    @media (min-width: 992px) {
+      offset-position: 15px;
+      max-height: 4vw;
+      min-height: 2vw;
+    }
   }
 
   .navend{

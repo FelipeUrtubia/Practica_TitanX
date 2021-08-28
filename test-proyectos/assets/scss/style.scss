@@ -3,12 +3,12 @@ $primary-blue: #07295F;
 $secondary-blue: #1D84B5;
 $border-blue: #53A2BE;
 $contrast-orange: #F67451;
+$secondary-contrast-orange: #eb876c;
 $background-white: #F3EFF5;
 
 body{
     background-color: $background-white;
     font-family: 'Raleway', sans-serif;
-    height: 2000px;
     .nav{
         img{
             height: 70px;
@@ -53,6 +53,12 @@ body{
                 .row{
                     align-items: center;
                     .col{
+                        .antsig{
+                            display: none;
+                            @media (min-width: 992px) {
+                                display: inline;
+                            }
+                        }
                         padding-top: 50px;
                         padding-bottom: 50px;
                         padding-left: 25px;
@@ -87,28 +93,119 @@ body{
         height: 400px;
         width: 100%;
         text-align: center;
-        //color: $background-white;
         h2{
             font-weight: bold;
+            color: $primary-blue;
         }
         .btn-primary{
             background-color: $secondary-blue;
             border-color: $border-blue;
         }
-        .makeit{
-            height: 100%;
+        .makeit {
+            /* The image used */
             background-image: url("../images/bannermakeit.jpg");
-            padding-top: 162px;
+            
+            /* Add the blur effect */
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            
+            /* Full height */
+            height: 400px; 
+            
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .innovacion {
+            /* The image used */
+            background-image: url("https://picsum.photos/id/534/1902/400?blur=2");
+
+            /* Full height */
+            height: 400px; 
+            
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          .desarrollo {
+            /* The image used */
+            background-image: url("https://picsum.photos/id/36/1902/400?blur=2");
+            
+            /* Full height */
+            height: 400px;
+            
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+          
+          /* Position text in the middle of the page/image */
+          
+        .makeit-text{
+            h2{
+                color: $contrast-orange;
+            }
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            width: 70%;
+            padding: 20px;
+            text-align: center;
+            transform: translate(-50%, 1970%);
+            @media (min-width: 992px) {
+                transform: translate(-50%, 850%);
+            }
+    
         }
-        .innovacion{
-            height: 100%;
-            background-image: url("https://picsum.photos/id/534/1902/400?grayscale&blur=8");
-            padding-top: 162px;
+        .innova-text{
+            h2{
+                color: $contrast-orange;
+            }
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            width: 70%;
+            padding: 20px;
+            text-align: center;
+            transform: translate(-50%, 2245%);
+            @media (min-width: 992px) {
+                transform: translate(-50%, 1170%);
+            }
         }
-        .desarrollo{
-            height: 100%;
-            background-image: url("https://picsum.photos/id/36/1902/400?grayscale&blur=8");
-            padding-top: 162px;
+        .des-text{
+            h2{
+                color: $contrast-orange;
+            }
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            width: 70%;
+            padding: 20px;
+            text-align: center;
+            transform: translate(-50%, 2515%);
+            @media (min-width: 992px) {
+                transform: translate(-50%, 1490%);
+            }
         }
         .separador{
             height: 8px;
@@ -118,17 +215,25 @@ body{
     .makeit{
         .fotoseccion{
             h1{
-                padding-top: 105px;
-                padding-bottom: 105px;
-                text-align: center;
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+                color: $contrast-orange;
                 font-weight: bold;
+                border: 3px solid #f1f1f1;
+                transform: translate(13%, 0%);
+                z-index: 2;
+                width: 71%;
+                padding: 20px;
+                text-align: center;
                 @media (min-width: 992px) {
-                    color: $background-white;
+                    transform: translate(20%, 100%);
                 }
             }
             background-image: url("../images/bannermakeit.jpg");
+            background-repeat:no-repeat;
+            background-position: right top;
             @media (min-width: 992px) {
-                height: 250px;
+                height: 400px;
                 background-image: url("../images/makeit/3.jpg");
                 min-height: 250px;
                 background-attachment: fixed;
@@ -178,6 +283,21 @@ body{
                     margin-left: 15px;
                 }
             }
+            .participantes{
+                color: $background-white;
+                background-color: $secondary-contrast-orange;
+                text-align: center;
+                p{
+                    color: black;
+                    margin-bottom: 0px;
+                }
+                h4{
+                    font-weight: 700;
+                }
+                .nombre{
+                    font-weight: 500;
+                }
+            }
         }
         .imagenes{
             text-align: center;
@@ -222,6 +342,9 @@ body{
                 color: $contrast-orange !important;
                 font-size: 30px;
             }
+            .textoarriba{
+                padding-top: 45px;
+            }
             @media (min-width: 992px) { 
                 p{
                     padding-left: 50px;
@@ -258,46 +381,172 @@ body{
     }
     .proyectos{
         .fotoseccioninno{
-            h1{
-                padding-top: 105px;
-                padding-bottom: 105px;
-                text-align: center;
-                font-weight: bold;
-                color: $background-white;
-                margin-bottom: 0px;
-            }
-            background-image: url("https://picsum.photos/id/534/812/400?grayscale&blur=3");
-            @media (min-width: 992px) {
-                height: 250px;
-                background-image: url("https://picsum.photos/id/534/950/400?grayscale&blur=1");
-                min-height: 250px;
-                background-attachment: fixed;
+            .bg-image {
+                /* The image used */
+                background-image: url("https://picsum.photos/id/534/950/400?blur=1");
+                
+                /* Add the blur effect */
+                filter: blur(1px);
+                -webkit-filter: blur(1px);
+                
+                /* Full height */
+                height: 200px;
+                @media (min-width: 992px) {
+                    height: 400px;
+                }
+                /* Center and scale the image nicely */
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+              }
+              /* Position text in the middle of the page/image */
+            .bg-text {
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+                color: $contrast-orange;
+                font-weight: bold;
+                border: 3px solid #f1f1f1;
+                padding: 20px;
+                text-align: center;
+                @media (min-width: 992px) {
+                    width: 72%;
+                    position: absolute;
+                    top: 35%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                }
+            }
+        }
+        .portadaproyectos{
+            height: 340px;
+            width: 300px;
+            object-fit: cover;
+            @media (min-width: 992px) {
+                width: 370px;
+                
             }
         }
         .fotosecciondes{
-            h1{
-                padding-top: 105px;
-                padding-bottom: 105px;
-                text-align: center;
-                font-weight: bold;
-                margin-bottom: 0px;
-                color: $background-white;
+            .bg-image {
+                /* The image used */
+                background-image: url("https://picsum.photos/id/36/950/400?blur=1");
+                
+                /* Add the blur effect */
+                filter: blur(1px);
+                -webkit-filter: blur(1px);
+                
+                /* Full height */
+                height: 200px;
                 @media (min-width: 992px) {
-                    color: black;
+                    height: 400px;
                 }
-            }
-            background-image: url("https://picsum.photos/id/36/812/400?grayscale&blur=3");
-            @media (min-width: 992px) {
-                height: 250px;
-                background-image: url("https://picsum.photos/id/36/950/400?grayscale&blur=1");
-                min-height: 250px;
-                background-attachment: fixed;
+                /* Center and scale the image nicely */
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+              }
+            /* Position text in the middle of the page/image */
+            .bg-text {
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+                color: $contrast-orange;
+                font-weight: bold;
+                border: 3px solid #f1f1f1;
+                padding: 20px;
+                text-align: center;
+                @media (min-width: 992px) {
+                    width: 72%;
+                    position: absolute;
+                    top: 35%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                }
+            }
+        }
+        img{
+            width: 370px;
+        }
+    }
+    .moldeproyectos{
+        text-align: center;
+        .nombreproyecto{
+            color: $primary-blue;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            @media (min-width: 992px) {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        img{
+            height: 300px;
+            border: solid 3px $border-blue;
+            border-radius: 30px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        @media (min-width: 992px) {
+            text-align: center;
+            img{
+                height: 350px;
+                width: 385px;
+                border: solid 5px $border-blue;
+                border-radius: 30px;
+            }
+        }
+        .row{
+            h2{
+                font-size: 40px;
+                font-weight: 700;
+            }
+            h4{
+                color: $contrast-orange;
+            }
+            h5{
+                text-align: start;
+                font-size: 18px;
+            }
+            ol{
+                text-align: start;
+                li{
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+            p{
+                text-align: start;
+                .fase{
+                    font-weight: bold;
+                }
+            }
+            .under{
+                text-align: center;
+                border-radius: 10px;
+            }
+            .final{
+                width: 320px;
+                @media (min-width: 992px) {
+                    height: 250px;
+                    width: 250px;
+                }
+            }
+        }
+        .participantes{
+            color: $background-white;
+            background-color: $secondary-contrast-orange;
+            text-align: center;
+            border-radius: 15px;
+            p{
+                color: black;
+                margin-bottom: 0px;
+            }
+            h4{
+                font-weight: 700;
+            }
+            .nombre{
+                font-weight: 500;
             }
         }
     }

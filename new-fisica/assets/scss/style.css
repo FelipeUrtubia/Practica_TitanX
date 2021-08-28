@@ -9,10 +9,23 @@ body .btn-primary, body .btn-primary:hover, body .btn-primary:active, body .btn-
   font-weight: 500;
 }
 
+@media (min-width: 992px) {
+  body .navbar-brand {
+    position: relative;
+    left: 145px;
+  }
+}
+
 body .logonavar {
-  offset-position: 15px;
-  max-height: 4vw;
-  min-height: 2vw;
+  height: 50px;
+}
+
+@media (min-width: 992px) {
+  body .logonavar {
+    offset-position: 15px;
+    max-height: 4vw;
+    min-height: 2vw;
+  }
 }
 
 body .navend {

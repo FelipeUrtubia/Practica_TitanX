@@ -1,0 +1,275 @@
+$primary-blue: #07295F;
+$secondary-blue: #246591;
+$background-blue: #152F4F;
+$hover-blue: #4180CB;
+$background-white: #F3EFF5;
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+    .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+        background-color: $secondary-blue !important;
+        border: none;
+        font-weight: 500;
+    }
+
+    .navbar{
+        background-color: $background-blue;
+        .container-fluid{
+            margin-left: 10px;
+            margin-right: 10px;
+            ul{
+                li{
+                    .btn-dark{
+                        background-color: $background-blue;
+                        border: none;
+                    }
+                    ul{
+                        border: none;
+                        background-color: $background-blue;
+                        text-align: start;
+                        li{
+                            background-color: $background-blue;
+                            ul{
+                                text-align: center;
+                                background-color: $secondary-blue;
+                                li{
+                                    background-color: $secondary-blue;
+                                    margin-top: 5px;
+                                    margin-bottom: 5px;
+                                }
+                            }
+                            a{
+                                text-decoration: none;
+                                color: $background-white;
+                            }
+                            p{
+                                text-align: end;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        img{
+            height: 50px;
+        }
+        @media (min-width: 992px) {
+            height: 108px;
+            .container-fluid{
+                margin-left: 157px;
+                margin-right: 157px;
+                ul{
+                    li{
+                        .btn-dark{
+                            background-color: $secondary-blue;
+                            border: none;
+                        }
+                        a{
+                            font-size: 22px;
+                        }
+                        ul{
+                            background-color: $secondary-blue;
+                            text-align: center;
+                            li{
+                                background-color: $secondary-blue;
+                                margin-top: 5px;
+                                p{
+                                    font-size: 18px;
+                                }
+                                a{
+                                    font-size: 18px;
+                                    text-decoration: none;
+                                    color: $background-white;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            img{
+                height: 4vw;
+                min-height: 3.5vw;
+            }
+        }
+    }
+
+    .parallax{
+        min-height: 825px; //tamaño espacio de la sección del parallax movil
+        background-image: url("../images/fondo.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        .container-fluid{
+            background-color: $background-white;
+            border: solid 10px $background-blue;
+            border-radius: 50px;
+            width: fit-content;
+            margin-left: 5px;
+            margin-right: 5px;
+            .title{
+                color: $primary-blue;
+                text-align: center;
+                h1{
+                    margin-top: 20px;
+                }
+            }
+            @media (min-width: 992px) {
+                width: 1605px;
+                min-height: 800px; //tamaño espacio de la sección del clases excritorio
+                border: solid 20px $background-blue;
+                border-radius: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                .title{
+                    h1{
+                        margin-top: 0px;
+                    }
+                    p{
+                        font-size: 25px;
+                    }
+                }
+            }
+            .container{
+                border: $background-blue solid 1px;
+                border-radius: 5px;
+                .nav-pills .nav-link.active {
+                    background-color: $secondary-blue;
+                    color: $background-white;
+                }
+                .nav-link{
+                    color: $secondary-blue;
+                }
+                ul{
+                    border-bottom: solid 1px $primary-blue;
+                    border-radius: 3px;
+                }
+                .tab-content{
+                    .tab-pane{
+                        height: 420px;
+                        a, p{
+                            font-size: 18px;
+                            color: $primary-blue;
+                            text-decoration: none;
+                            transition: color .2s;
+                            &:hover{
+                                text-decoration:none;
+                                color:$hover-blue;
+                            }
+                        }
+                        p{
+                            text-align: center;
+                        }
+                        #myInput {
+                            background-position: 10px 12px;
+                            background-repeat: no-repeat;
+                            background-color: $background-white;
+                            width: 100%;
+                            font-size: 16px;
+                            padding: 12px 20px 12px 40px;
+                            border: 1px solid #ddd;
+                            margin-bottom: 12px;
+                            position: -webkit-sticky;
+                            position: sticky;
+                            top: 0px;
+                          }
+                          
+                          #myUL {
+                            list-style-type: none;
+                            padding: 0;
+                            margin: 0;
+                            margin-right: 5px;
+                            border-bottom: none;
+                          }
+                          
+                          #myUL li a {
+                            border: 1px solid #ddd;
+                            margin-top: -1px; /* Prevent double borders */
+                            margin-left: 0px;
+                            background-color: $background-white;
+                            padding: 12px;
+                            text-decoration: none;
+                            font-size: 18px;
+                            color: black;
+                            display: block
+                          }
+                          
+                          #myUL li a:hover:not(.header) {
+                            background-color: $background-white;
+                          }
+                    }
+                }
+                @media (min-width: 992px) {
+                    .tab-content{
+                        .tab-pane{
+                            height: 440px;
+                            a, p{
+                                margin-left: 80px;
+                            }
+                            p{
+                                text-align: start;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media (min-width: 992px) {
+            min-height: 900px; //tamaño espacio de la sección del parallax escritorio
+        }
+    }
+    .footer{
+        background: $background-blue;
+        color:$background-white;
+        
+        .colab{
+            color: $background-white;
+            .card{
+                background-color: $secondary-blue;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 25px;
+            }
+            @media (min-width: 992px) {
+                .card{
+                    margin-left: 0;
+                    width: 80%;
+                    height: 300px;
+                    .card-img-top{
+                        height: 162px;
+                    }
+                }
+            }
+        }
+        .follow{
+            
+            a{
+                img{
+                    height: 60px;
+                    margin: 10px;
+                }
+            }
+            @media (min-width: 992px) {
+                text-align: end;
+                a{
+                    img{
+                        height: 50px;
+                        margin-top: 20px;
+                        margin-left: 20px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+        .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+        @media (min-width: 992px) {
+            padding-left: 157px;
+            padding-right: 157px;
+        }
+      }
+}
